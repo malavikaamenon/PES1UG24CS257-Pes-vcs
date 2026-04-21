@@ -113,9 +113,11 @@ int index_status(const Index *index) {
     if (index->count == 0) {
         printf("  (nothing to show)\n");
     } else {
-        for (int i = 0; i < index->count; i++) {
-            printf("  staged: %s\n", index->entries[i].path);
-        }
+        int i = 0;
+while (i < index->count) {
+    printf("  staged: %s\n", index->entries[i].path);
+    i++;
+}
     }
 
     printf("\nUnstaged changes:\n");
