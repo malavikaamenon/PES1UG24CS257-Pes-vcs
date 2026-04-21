@@ -21,9 +21,9 @@ int index_load(Index *index) {
         char hex[HASH_HEX_SIZE + 1];
 
         int r = fscanf(f, "%u %64s %lu %u %s",
-                       &e.mode,
-                       hex,
                        &e.mtime_sec,
+                         &e.mode,
+                       hex,
                        &e.size,
                        e.path);
 
