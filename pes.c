@@ -11,7 +11,6 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-// ─── PROVIDED: Command Implementations ──────────────────────────────────────
 
 // Usage: pes init
 void cmd_init(void) {
